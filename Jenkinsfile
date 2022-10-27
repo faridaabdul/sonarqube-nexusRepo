@@ -2,12 +2,12 @@ pipeline {
     agent any
 
     stages {
-        //stage('Git checkout') {
-        //    steps {
+        stage('Git checkout') {
+            steps {
         //        git 'https://github.com/faridaabdul/sonarqube-nexusRepo.git'
-                git branch: 'main',url: 'https://github.com/faridaabdul/sonarqube-nexusRepo.git'
-        //    }
-        //}
+                git branch: 'main',credentialsId: '',url: 'https://github.com/faridaabdul/sonarqube-nexusRepo.git'
+            }
+        }
         
         stage('Build with maven') {
             steps {

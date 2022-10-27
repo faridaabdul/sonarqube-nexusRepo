@@ -2,11 +2,11 @@ pipeline {
     agent any
 
     stages {
-        stage('Git checkout') {
-            steps {
-                git 'https://github.com/faridaabdul/sonarqube-nexusRepo.git'
-            }
-        }
+        //stage('Git checkout') {
+        //    steps {
+        //        git 'https://github.com/faridaabdul/sonarqube-nexusRepo.git'
+        //    }
+        //}
         
         stage('Build with maven') {
             steps {

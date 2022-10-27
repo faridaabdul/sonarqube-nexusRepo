@@ -5,6 +5,7 @@ pipeline {
         //stage('Git checkout') {
         //    steps {
         //        git 'https://github.com/faridaabdul/sonarqube-nexusRepo.git'
+                git branch: 'main',url: 'https://github.com/faridaabdul/sonarqube-nexusRepo.git'
         //    }
         //}
         
